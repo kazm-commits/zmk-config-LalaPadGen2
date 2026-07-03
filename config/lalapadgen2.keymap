@@ -54,8 +54,13 @@
         };
 
         COMBO_TAB {
-            bindings = <&kp TAB>;
-            key-positions = <23 22>;
+            bindings = <&kp BACKSPACE>;
+            key-positions = <11 12>;
+        };
+
+        combo_ZENHAN {
+            bindings = <&kp GRAVE>;
+            key-positions = <21 22>;
         };
     };
 
