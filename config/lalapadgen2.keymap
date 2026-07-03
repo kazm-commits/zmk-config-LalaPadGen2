@@ -50,12 +50,12 @@
 
         CONBO_ESC {
             bindings = <&kp ESCAPE>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
         };
 
         COMBO_TAB {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <23 22>;
         };
     };
 
@@ -78,9 +78,9 @@
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp KP_NUMLOCK    &kp N7             &kp N8           &kp N9        &kp KP_PLUS
-&kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0                    &trans            &kp NUMBER_4       &kp N5           &kp NUMBER_6  &kp KP_MINUS
-&kp F6            &kp F7             &kp F8        &kp F9        &kp F10                   &trans            &kp NUMBER_1       &kp NUMBER_2     &kp NUMBER_3  &kp KP_ASTERISK
+&kp NUMBER_1      &kp NUMBER_2       &kp NUMBER_3  &kp NUMBER_4  &kp N5                    &kp KP_NUMLOCK    &kp N7             &kp N8           &kp N9        &kp SLASH
+&kp NUMBER_6      &kp N7             &kp N8        &kp N9        &kp N0                    &kp SEMI          &kp NUMBER_4       &kp N5           &kp NUMBER_6  &kp LS(APOS)
+&kp F6            &kp F7             &kp F8        &kp F9        &kp F10                   &kp DOT           &kp NUMBER_1       &kp NUMBER_2     &kp NUMBER_3  &kp DOT
 &trans            &trans             &trans        &trans        &trans   &trans  &kp DEL  &trans            &kp N0             &kp KP_NUMBER_0  &kp KP_DOT    &kp KP_DIVIDE
                   &trans             &trans        &trans        &trans   &trans  &trans   &trans            &trans             &trans           &trans
 &trans            &trans             &trans                                                                                     &trans           &trans        &trans
@@ -111,6 +111,18 @@
          &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
 &trans   &trans   &trans                                                                                                   &trans                         &trans                         &trans
 &trans   &trans   &trans   &trans   &trans                   &trans                         &trans                         &trans                         &trans                         &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                                                  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
