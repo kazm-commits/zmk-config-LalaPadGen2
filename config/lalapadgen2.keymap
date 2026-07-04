@@ -62,6 +62,21 @@
             bindings = <&kp GRAVE>;
             key-positions = <21 22>;
         };
+
+        combo_return {
+            bindings = <&kp RET>;
+            key-positions = <2 3>;
+        };
+
+        combo_DEL {
+            bindings = <&kp DEL>;
+            key-positions = <12 13>;
+        };
+
+        combo_TAB {
+            bindings = <&kp TAB>;
+            key-positions = <23 22>;
+        };
     };
 
     keymap {
