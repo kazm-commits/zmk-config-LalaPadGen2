@@ -177,6 +177,16 @@
             bindings = <&none>;
             key-positions = <25 26>;
         };
+
+        COMBO_LKAGI {
+            bindings = <&kp RBKT>;
+            key-positions = <10 13>;
+        };
+
+        COMBO_RKAGI {
+            bindings = <&kp BSLH>;
+            key-positions = <16 19>;
+        };
     };
 
     keymap {
