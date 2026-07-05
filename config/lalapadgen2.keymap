@@ -53,7 +53,7 @@
             key-positions = <1 2>;
         };
 
-        COMBO_TAB {
+        COMBO_BACKSPACE {
             bindings = <&kp BACKSPACE>;
             key-positions = <11 12>;
         };
