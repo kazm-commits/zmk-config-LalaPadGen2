@@ -147,6 +147,36 @@
             bindings = <&none>;
             key-positions = <8 9>;
         };
+
+        COMBO_ {
+            bindings = <&none>;
+            key-positions = <6 8>;
+        };
+
+        COMBO_ {
+            bindings = <&none>;
+            key-positions = <16 18>;
+        };
+
+        COMBO_ {
+            bindings = <&none>;
+            key-positions = <26 28>;
+        };
+
+        COMBO_ {
+            bindings = <&none>;
+            key-positions = <5 6>;
+        };
+
+        COMBO_ {
+            bindings = <&none>;
+            key-positions = <15 16>;
+        };
+
+        COMBO_ {
+            bindings = <&none>;
+            key-positions = <25 26>;
+        };
     };
 
     keymap {
