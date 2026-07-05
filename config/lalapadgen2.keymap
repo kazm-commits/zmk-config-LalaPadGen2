@@ -89,7 +89,7 @@
         };
 
         COMBO_LKAKKO {
-            bindings = <&kp LS(NUMBER_9)>;
+            bindings = <&kp LS(NUMBER_8)>;
             key-positions = <11 13>;
         };
 
@@ -114,32 +114,32 @@
         };
 
         COMBO_ {
-            bindings = <&none>;
+            bindings = <&kp LS(NUMBER_2)>;
             key-positions = <8 7>;
         };
 
         COMBO_ {
-            bindings = <&none>;
+            bindings = <&kp DOT>;
             key-positions = <17 18>;
         };
 
         COMBO_ {
-            bindings = <&none>;
+            bindings = <&kp LS(N7)>;
             key-positions = <27 28>;
         };
 
         COMBO_ {
-            bindings = <&none>;
+            bindings = <&kp SEMI>;
             key-positions = <6 7>;
         };
 
         COMBO_ {
-            bindings = <&none>;
+            bindings = <&kp COMMA>;
             key-positions = <16 17>;
         };
 
         COMBO_ {
-            bindings = <&none>;
+            bindings = <&kp APOS>;
             key-positions = <26 27>;
         };
 
@@ -154,7 +154,7 @@
         };
 
         COMBO_ {
-            bindings = <&none>;
+            bindings = <&kp LS(N9)>;
             key-positions = <16 18>;
         };
 
