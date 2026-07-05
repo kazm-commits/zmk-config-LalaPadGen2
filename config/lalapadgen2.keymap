@@ -153,7 +153,7 @@
             key-positions = <6 8>;
         };
 
-        COMBO_LKAKKO {
+        COMBO_RKAKKO {
             bindings = <&kp LS(N9)>;
             key-positions = <16 18>;
         };
