@@ -123,7 +123,7 @@
             key-positions = <17 18>;
         };
 
-        COMBO_ {
+        COMBO_QUOT {
             bindings = <&kp LS(N7)>;
             key-positions = <27 28>;
         };
@@ -143,7 +143,7 @@
             key-positions = <26 27>;
         };
 
-        COMBO_ {
+        COMBO_s {
             bindings = <&none>;
             key-positions = <8 9>;
         };
