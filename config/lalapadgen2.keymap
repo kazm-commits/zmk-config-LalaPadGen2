@@ -140,13 +140,13 @@
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W      &kp D              &kp R               &kp V                                                                 &kp Y      &kp Y                      &kp K               &kp P          &kp SLASH
-&kp A              &kp S      &mt2 LEFT_SHIFT E  &kp T               &kp G                                                                 &kp H      &kp U                      &mt2 RIGHT_SHIFT I  &kp O          &mt2 EQUAL MINUS
-&mt2 LEFT_SHIFT Z  &kp X      &kp C              &kp B               &kp F                                                                 &kp J      &kp N                      &kp M               &kp L          &kp INTERNATIONAL_1
-&kp LCTRL          &kp LWIN   &kp LEFT_ALT       &lt 2 INT_MUHENKAN  &lt 1 SPACE  &mt LEFT_CONTROL INTERNATIONAL_4  &mt RIGHT_CONTROL TAB  &lt 2 RET  &mt RIGHT_SHIFT BACKSPACE  &kp RIGHT_ALT       &kp RIGHT_GUI  &kp RIGHT_CONTROL
-                   &none      &kp RIGHT          &kp DOWN            &kp LEFT     &kp UP                            &kp UP                 &kp LEFT   &kp DOWN                   &kp RIGHT           &none
-&mkp LCLK          &mkp RCLK  &mkp MCLK                                                                                                                                          &mkp LCLK           &mkp RCLK      &mkp MCLK
-&mkp MB4           &mkp MB5   &kp LG(TAB)        &kp LG(D)           &kp LCTRL                                                             &mkp MB4   &mkp MB5                   &kp LG(TAB)         &kp LG(D)      &kp LCTRL
+&kp Q      &kp W            &mt2 LEFT_GUI D    &kp R                &kp V                                                                 &kp Y      &kp Y                      &mt2 RIGHT_GUI K    &kp P             &kp SLASH
+&kp A      &mt2 LEFT_ALT S  &mt2 LEFT_SHIFT E  &mt2 LEFT_CONTROL T  &kp G                                                                 &kp H      &mt2 RIGHT_CONTROL U       &mt2 RIGHT_SHIFT I  &mt2 RIGHT_ALT O  &mt2 EQUAL MINUS
+&kp Z      &kp X            &kp C              &kp B                &kp F                                                                 &kp J      &kp N                      &kp M               &kp L             &kp INTERNATIONAL_1
+&kp LCTRL  &kp LWIN         &kp LEFT_ALT       &lt 2 INT_MUHENKAN   &lt 1 SPACE  &mt LEFT_CONTROL INTERNATIONAL_4  &mt RIGHT_CONTROL TAB  &lt 2 RET  &mt RIGHT_SHIFT BACKSPACE  &kp RIGHT_ALT       &kp RIGHT_GUI     &kp RIGHT_CONTROL
+           &none            &kp RIGHT          &kp DOWN             &kp LEFT     &kp UP                            &kp UP                 &kp LEFT   &kp DOWN                   &kp RIGHT           &none
+&mkp LCLK  &mkp RCLK        &mkp MCLK                                                                                                                                           &mkp LCLK           &mkp RCLK         &mkp MCLK
+&mkp MB4   &mkp MB5         &kp LG(TAB)        &kp LG(D)            &kp LCTRL                                                             &mkp MB4   &mkp MB5                   &kp LG(TAB)         &kp LG(D)         &kp LCTRL
             >;
         };
 
