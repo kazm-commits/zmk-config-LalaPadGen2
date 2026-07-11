@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "td_mo12";
             #binding-cells = <0>;
-            bindings = <&mo 1>, <&mo 2>;
+            bindings = <&mo 2>, <&mo 3>;
         };
     };
 
@@ -132,6 +132,20 @@
             bindings = <&kp BSLH>;
             key-positions = <16 19>;
         };
+
+        o24 {
+            bindings = <&to 1>;
+            key-positions = <0 9>;
+        };
+    };
+
+    macros {
+        xn: xn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp X &kp N>;
+            label = "XN";
+        };
     };
 
     keymap {
@@ -143,23 +157,35 @@
 &kp Q      &kp W            &mt2 LEFT_GUI D    &kp R                &kp V                                                                 &kp Y      &kp Y                      &mt2 RIGHT_GUI K    &kp P             &kp SLASH
 &kp A      &mt2 LEFT_ALT S  &mt2 LEFT_SHIFT E  &mt2 LEFT_CONTROL T  &kp G                                                                 &kp H      &mt2 RIGHT_CONTROL U       &mt2 RIGHT_SHIFT I  &mt2 RIGHT_ALT O  &mt2 EQUAL MINUS
 &kp Z      &kp X            &kp C              &kp B                &kp F                                                                 &kp J      &kp N                      &kp M               &kp L             &kp INTERNATIONAL_1
-&kp LCTRL  &kp LWIN         &kp LEFT_ALT       &lt 2 INT_MUHENKAN   &lt 1 SPACE  &mt LEFT_CONTROL INTERNATIONAL_4  &mt RIGHT_CONTROL TAB  &lt 2 RET  &mt RIGHT_SHIFT BACKSPACE  &kp RIGHT_ALT       &kp RIGHT_GUI     &kp RIGHT_CONTROL
+&kp LCTRL  &kp LWIN         &kp LEFT_ALT       &lt 3 INT_MUHENKAN   &lt 2 SPACE  &mt LEFT_CONTROL INTERNATIONAL_4  &mt RIGHT_CONTROL TAB  &lt 3 RET  &mt RIGHT_SHIFT BACKSPACE  &kp RIGHT_ALT       &kp RIGHT_GUI     &kp RIGHT_CONTROL
            &none            &kp RIGHT          &kp DOWN             &kp LEFT     &kp UP                            &kp UP                 &kp LEFT   &kp DOWN                   &kp RIGHT           &none
 &mkp LCLK  &mkp RCLK        &mkp MCLK                                                                                                                                           &mkp LCLK           &mkp RCLK         &mkp MCLK
 &mkp MB4   &mkp MB5         &kp LG(TAB)        &kp LG(D)            &kp LCTRL                                                             &mkp MB4   &mkp MB5                   &kp LG(TAB)         &kp LG(D)         &kp LCTRL
             >;
         };
 
+        o24_ilayer {
+            bindings = <
+&kp Q   &kp L            &mt2 LEFT_GUI U    &kp Y                &kp V                             &kp F   &kp W                 &mt2 RIGHT_GUI R    &kp P             &mt2 LBKT SLASH
+&kp E   &mt2 LEFT_ALT I  &mt2 LEFT_SHIFT A  &mt2 LEFT_CONTROL O  &mt2 EQUAL MINUS                  &kp K   &mt2 RIGHT_CONTROL T  &mt2 RIGHT_SHIFT N  &mt2 RIGHT_ALT S  &kp H
+&kp Z   &kp X            &kp C              &xn                  &kp Z                             &kp G   &kp D                 &kp M               &kp J             &mt2 INTERNATIONAL_1 B
+&trans  &trans           &trans             &trans               &trans            &trans  &trans  &trans  &trans                &trans              &trans            &trans
+        &trans           &trans             &trans               &trans            &trans  &trans  &trans  &trans                &trans              &trans
+&trans  &trans           &trans                                                                                                  &trans              &trans            &trans
+&trans  &trans           &trans             &trans               &trans                            &trans  &trans                &trans              &trans            &trans
+            >;
+        };
+
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp PAGE_UP       &kp HOME           &kp UP_ARROW    &kp END          &mkp MB5                  &kp KP_NUMLOCK    &kp N7             &kp N8        &kp N9        &kp SLASH
-&kp PAGE_DOWN     &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp MB4                  &kp SEMI          &kp NUMBER_4       &kp N5        &kp NUMBER_6  &kp LS(APOS)
-&kp LC(Z)         &kp LC(X)          &kp LC(C)       &kp LC(V)        &none                     &kp DOT           &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp DOT
-&trans            &trans             &trans          &trans           &trans    &trans  &trans  &trans            &kp N0             &trans        &kp KP_DOT    &kp KP_DIVIDE
-                  &trans             &trans          &trans           &trans    &trans  &trans  &trans            &trans             &trans        &trans
-&trans            &trans             &trans                                                                                          &trans        &trans        &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans          &trans           &trans                    &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans        &trans
+&kp PAGE_UP       &kp HOME           &kp UP_ARROW    &kp END          &mkp MB5                         &none             &kp N7             &kp N8        &kp N9        &kp SLASH
+&kp PAGE_DOWN     &kp LEFT_ARROW     &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp MB4                         &kp KP_MINUS      &kp NUMBER_4       &kp N5        &kp NUMBER_6  &kp LS(KP_SLASH)
+&kp LC(Z)         &kp LC(X)          &kp LC(C)       &kp LC(V)        &kp PRINTSCREEN                  &kp KP_PLUS       &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp ASTRK
+&trans            &trans             &trans          &trans           &trans           &trans  &trans  &trans            &kp N0             &trans        &kp KP_DOT    &kp KP_DIVIDE
+                  &trans             &trans          &trans           &trans           &trans  &trans  &trans            &trans             &trans        &trans
+&trans            &trans             &trans                                                                                                 &trans        &trans        &trans
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans          &trans           &trans                           &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans        &trans
             >;
         };
 
@@ -188,26 +214,14 @@
 &trans   &trans   &trans   &trans   &trans                   &trans                         &trans                         &trans                         &trans                         &trans
             >;
         };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                                                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-            >;
-        };
     };
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
         Cond_Syslayer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+            if-layers = <2 3>;
+            then-layer = <5>;
         };
     };
 };
