@@ -171,9 +171,9 @@
 
         o24_ilayer {
             bindings = <
-&kp Q   &kp L            &mt2 LEFT_GUI U    &kp Y                &kp V                             &kp F   &kp W                 &mt2 RIGHT_GUI R    &kp P             &mt2 LBKT SLASH
-&kp E   &mt2 LEFT_ALT I  &mt2 LEFT_SHIFT A  &mt2 LEFT_CONTROL O  &mt2 EQUAL MINUS                  &kp K   &mt2 RIGHT_CONTROL T  &mt2 RIGHT_SHIFT N  &mt2 RIGHT_ALT S  &kp H
-&kp Z   &kp X            &kp C              &xn                  &kp Z                             &kp G   &kp D                 &kp M               &kp J             &mt2 INTERNATIONAL_1 B
+&kp Q   &kp L            &mt2 LEFT_GUI U    &kp Y                &kp V                             &kp F   &kp G                 &mt2 RIGHT_GUI R    &kp P             &mt2 LBKT SLASH
+&kp E   &mt2 LEFT_ALT I  &mt2 LEFT_SHIFT A  &mt2 LEFT_CONTROL O  &mt2 EQUAL MINUS                  &kp D   &mt2 RIGHT_CONTROL T  &mt2 RIGHT_SHIFT K  &mt2 RIGHT_ALT S  &kp H
+&kp Z   &kp X            &kp C              &xn                  &kp Z                             &kp W   &kp N                 &kp M               &kp J             &mt2 INTERNATIONAL_1 B
 &trans  &trans           &trans             &trans               &trans            &trans  &trans  &trans  &trans                &trans              &trans            &trans
         &trans           &trans             &trans               &trans            &trans  &trans  &trans  &trans                &trans              &trans
 &trans  &trans           &trans                                                                                                  &trans              &trans            &trans
